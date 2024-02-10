@@ -4,8 +4,17 @@ body {
 }
 
 button {
-background-color: yellow;
-font-size: 15px;                    
+background-color: #2dc875;
+font-size: 20px; 
+width: 100px;  
+text-align: center;
+margin-left: 150px;
+margin: 100;
+}
+
+button:hover {
+    color: rgb(240, 211, 126);
+    background-color: #ffffff;
 }
 
 .cell {

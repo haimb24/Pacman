@@ -41,11 +41,17 @@ function updateScore(diff) {
 }
 
 function gameOver() {
-    console.log('Game Over')
     gGame.isOn = false;
-    clearInterval(gIntervalGhosts)
+    gGame.score = 0 
     gBorad[gPacman.location.i][gPacman.location.j] = EMPTY
+    clearInterval(gIntervalGhosts)
     renderCell(gPacman.location , EMPTY)
     alert("Game Over!")
 }
+
+function playAgain(){
+    gGame.isOn = true
+    init()
+}
+
 
